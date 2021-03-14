@@ -1,0 +1,402 @@
+[
+    {
+        "label": "Health Service",
+        "value": "healthService",
+        "filterTags": [
+            {
+                "osm_tag": "healthcare:speciality",
+                "label": "Speciality",
+                "type": "multi-select",
+                "selectors": [
+                    {
+                        "osm_value": "maternity",
+                        "label": "Maternity"
+                    },
+                    {
+                        "osm_value":"dermatology",
+                        "label": "Dermatology"
+                    },
+                    {
+                        "osm_value":"plastic_surgery",
+                        "label": "Plastic Surgery"
+                    },
+                    {
+                        "osm_value":"reconstructive_surgery",
+                        "label": "Reconstructive Surgery"
+                    },
+                    {
+                        "osm_value":"internal_medicine",
+                        "label": "Internal Medicine"
+                    },
+                    {
+                        "osm_value":"neurology",
+                        "label": "Neurology"
+                    },
+                    {
+                        "osm_value":"trauma",
+                        "label": "Trauma and Surgery"
+                    },
+                    {
+                        "osm_value":"ophthalmology",
+                        "label": "Ophthalmology"
+                    },
+                    {
+                        "osm_value":"rehabilitation",
+                        "label": "Rehabilitation"
+                    },
+                    {
+                        "osm_value":"psychiatry",
+                        "label": "Psychiatry"
+                    },
+                    {
+                        "osm_value":"traditional",
+                        "label": "Traditional"
+                    },
+                    {
+                        "osm_value": "urology",
+                        "label": "Urology"
+                    },
+                    {
+                        "osm_value":"oncology",
+                        "label": "Oncology"
+                    },
+                    {
+                        "osm_value":"palliative",
+                        "label": "Palliative"
+                    },
+                    {
+                        "osm_value":"infectious_disease",
+                        "label": "Infectious Disease"
+                    },
+                    {
+                        "osm_value":"pediatric",
+                        "label": "Pediatric"
+                    },
+                    {
+                        "osm_value":"ent",
+                        "label": "ENT"
+                    },
+                    {
+                        "osm_value":"blood_donation_center",
+                        "label": "Blood donation center"
+                    },
+                    {
+                        "osm_value":"laboratory",
+                        "label": "Laboratory"
+                    },
+                    {
+                        "osm_value":"dentist",
+                        "label": "Dentist"
+                    },
+                    {
+                        "osm_value":"intensive_care",
+                        "label": "Intensive Care"
+                    },
+                    {
+                        "osm_value":"obstetrics;gynaecology",
+                        "label": "Obstetrics and Gynaecology"
+                    },
+                    {
+                        "osm_value": "andrology",
+                        "label":"Andrology"
+                    },
+                    {
+                        "osm_value":"veterinary",
+                        "label":"Veterinary"
+                    },
+                    {
+                        "osm_value":"primary_care",
+                        "label": "Primary Care"
+                    },
+                    {
+                        "osm_value":"reproductive_health",
+                        "label": "Reproductive Health"
+                    },
+                    {
+                        "osm_value":"gerontology",
+                        "label": "Gerontology"
+                    },
+                    {
+                        "osm_value":"general",
+                        "label": "General"
+                    },
+                    {
+                        "osm_value":"orthopedic",
+                        "label": "Orthopedic"
+                    }
+                ]
+            }, 
+            {
+                "osm_tag": "healthcare_facility:type",
+                "label": "Category",
+                "type": "single-select",
+                "selectors": [
+                    {
+                        "osm_value":"family_clinic",
+                        "label": "Family Clinic"
+                    },
+                    {
+                        "osm_value":"soum_town_family_clinic",
+                        "label": "Soum, Town Family Clinic"
+                    },
+                    {
+                        "osm_value": "maternity_center",
+                        "label": "Maternity Center"
+                    },
+                    {
+                        "osm_value":"public_health_center",
+                        "label": "Public Health Center"
+                    },
+                    {
+                        "osm_value":"clinic",
+                        "label": "Clinic"
+                    },
+                    {
+                        "osm_value":"palliative_care",
+                        "label": "Palliative Care"
+                    },
+                    {
+                        "osm_value":"integrated_hospital",
+                        "label": "Integrated Hospital"
+                    },
+                    {
+                        "osm_value":"health_and_wellness_resort",
+                        "label": "Health And Wellness Resort"
+                    },
+                    {
+                        "osm_value":"emergency_center",
+                        "label": "Emergency Center"
+                    },
+                    {
+                        "osm_value":"rehabilitation_center",
+                        "label":"Rehabilitation Center" 
+                    },
+                    {
+                        "osm_value":"special_hospital",
+                        "label": "Special Hospital"
+                    },
+                    {
+                        "osm_value":"specialist_center",
+                        "label": "Specialist Center"
+                    },
+                    {
+                        "osm_value": "multi-specialist_hospital",
+                        "label": "Multi-Special Hospital"
+                    },
+                    {
+                        "osm_value":"nursing_home",
+                        "label": "Nursing Home"
+                    },
+                    {
+                        "osm_value":"traditional_medicine_integrated_hospital",
+                        "label": "Traditional Medicine Integrated Hospital"
+                    }
+                ] 
+            },
+            {
+                "osm_tag": "wheelchair",
+                "label": "Wheelchair",
+                "type": "single-select",
+                "selectors": [
+                    {
+                        "osm_value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "osm_value":"no",
+                        "label": "No"
+                    },
+                    {
+                        "osm_value":"limited",
+                        "label": "Limited"
+                    },
+                    {
+                        "osm_value":"unknown",
+                        "label": "Unknown"
+                    }
+                ]  
+            },
+            {
+                "osm_tag": "opening_hours",
+                "label": "Opening Hours",
+                "type": "single-select",
+                "selectors": [
+                    {
+                        "osm_value": "24/7",
+                        "label": "24/7"
+                    }
+                ]
+            },
+            {
+                "osm_tag": "emergency",
+                "label": "Emergency",
+                "type": "single-select",
+                "selectors": [
+                    {
+                        "osm_value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "osm_value":"no",
+                        "label": "No"
+                    }
+                ]  
+            },
+            {
+                "osm_tag": "Facility:insurance",
+                "label": "Insurance",
+                "type": "single-select",
+                "selectors": [
+                    {
+                        "osm_value": "public",
+                        "label": "Public"
+                    },
+                    {
+                        "osm_value": "private",
+                        "label": "Private"
+                    },
+                    {
+                        "osm_value": "no_insurance",
+                        "label": "No Insurance"
+                    }
+                ]  
+            },
+            {
+                "osm_tag": "facility:services",
+                "label": "Services",
+                "type": "multi-select",
+                "selectors": [
+                    {
+                        "osm_value": "covid-19_testing_PCR",
+                        "label": "Covid-19 Testing PCR"
+                    },
+                    {
+                        "osm_value": "covid-19_testing_rapid",
+                        "label": "Covid-19 Testing Rapid"
+                    },
+                    {
+                        "osm_value": "24_hour_ambulance",
+                        "label": "24 Hour Ambulance"
+                    }
+                ]  
+            },
+            {
+                "osm_tag": "hospital:level",
+                "label": "Level",
+                "type": "single-select",
+                "selectors": [
+                    {
+                        "osm_value": "national",
+                        "label": "National"
+                    },
+                    {
+                        "osm_value": "regional",
+                        "label": "Regional"
+                    },
+                    {
+                        "osm_value": "province",
+                        "label": "Province"
+                    },
+                    {
+                        "osm_value": "district",
+                        "label": "District"
+                    },
+                    {
+                        "osm_value": "multi-soum",
+                        "label": "Multi-Soum"
+                    },
+                    {
+                        "osm_value": "soum",
+                        "label": "Soum"
+                    },
+                    {
+                        "osm_value": "family",
+                        "label": "Family"
+                    },
+                    {
+                        "osm_value": "specialist",
+                        "label": "Specialist"
+                    },
+                    {
+                        "osm_value": "private",
+                        "label": "Private"
+                    }
+                ]  
+            },
+            {
+                "osm_tag": "operator:type",
+                "label": "Operator Type",
+                "type": "single-select",
+                "selectors": [
+                    {
+                        "osm_value": "public",
+                        "label": "Public"
+                    },
+                    {
+                        "osm_value": "private",
+                        "label": "Private"
+                    },
+                    {
+                        "osm_value": "public_owned;private_operated",
+                        "label": "Public Owned, Private Operated"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "label": "Pharmacy",
+        "value": "pharmacy",
+        "filterTags": [
+            {
+                "osm_tag": "wheelchair",
+                "label": "Wheelchair",
+                "type": "single-select",
+                "selectors": [
+                    {
+                        "osm_value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "osm_value":"no",
+                        "label": "No"
+                    },
+                    {
+                        "osm_value":"limited",
+                        "label": "Limited"
+                    },
+                    {
+                        "osm_value":"unknown",
+                        "label": "Unknown"
+                    }
+                ]  
+            },
+            {
+                "osm_tag": "opening_hours",
+                "label": "Opening Hours",
+                "type": "single-select",
+                "selectors": [
+                    {
+                        "osm_value": "24/7",
+                        "label": "24/7"
+                    }
+                ]
+            },
+            {
+                "osm_tag": "emergency",
+                "label": "Emergency",
+                "type": "single-select",
+                "selectors": [
+                    {
+                        "osm_value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "osm_value": "no",
+                        "label": "No"
+                    }
+                ]  
+            }
+        ]
+    }
+]

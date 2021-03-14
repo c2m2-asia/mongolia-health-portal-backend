@@ -1,0 +1,49 @@
+version: "3"
+services: 
+    api:
+        container_name: c2m2-api
+        image: "code.kathmandulivinglabs.org:5555/c2m2-mongolia/c2m2-api/dev:v1.10.3.2020"
+        restart: always
+        env_file: 
+            - ./.env
+        ports:
+            - "8080:8080"
+        depends_on:
+            - apidb
+        links:
+            - apidb:apidb
+        
+    apidb:
+        container_name: c2m2mongolia-db-postgres
+        image: "kartoza/postgis:12.4"
+        env_file: 
+            - ./.env
+        ports:
+            - 5431:5432
+        volumes:
+            - ./psql_data:/var/lib/postgresql/data
+    
+    apidbbackup: 
+        container_name: c2m2mongolia-db-backup
+        image: "kartoza/pg-backup:13.0"
+        env_file:
+            - ./.env
+        volumes:
+            - ./backups:/backups
+        links:
+            - apidb:apidb
+
+    # apicron:
+    #     container_name: cron
+    #     image: "code.kathmandulivinglabs.org:5555/c2m2-mongolia/c2m2-api/dev:v2.26.2.2020"
+    #     volumes:
+    #     - .:/app
+    #     entrypoint: sh /app/entrypoint.sh
+        
+    # nginx:
+    #     container_name: nginx
+    #     restart: always
+    #     build:
+    #         context: ./nginx
+    #     ports:
+    #         - "80:80"

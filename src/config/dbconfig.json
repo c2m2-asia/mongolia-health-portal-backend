@@ -1,0 +1,41 @@
+{
+  "development": {
+    "username": "c2m2mongolia_db",
+    "password": "1234",
+    "database": "c2m2mongolia_db",
+    "host": "apidb",
+    "dialect": "postgres",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    }
+  },
+  "test": {
+    "username": "c2m2mongolia_db",
+    "password": "1234",
+    "database": "c2m2mongolia_db",
+    "host": "apidb",
+    "dialect": "postgres",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    }
+  },
+  "production": {
+    "username": "c2m2mongolia_db",
+    "password": "1234",
+    "database": "c2m2mongolia_db",
+    "host": "apidb",
+    "dialect": "postgres",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    }
+  }
+}

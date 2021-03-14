@@ -1,0 +1,550 @@
+[
+    {
+        "label": "Health Service",
+        "value": "healthService",
+        "editTags": [
+            {
+                "osm_tag": "name",
+                "isEditable": "True",
+                "label": "Name",
+                "type": "text",
+                "helperText": "Name of the service"
+            },
+            {
+                "osm_tag": "name:en",
+                "isEditable": "True",
+                "label": "Name in English",
+                "type": "text",
+                "helperText": "Name of the service in English"
+            },
+            {
+                "osm_tag": "name:mn",
+                "isEditable": "True",
+                "label": "Name in Mongolian",
+                "type": "text",
+                "helperText": "Name of the service in Mongolian"
+            },
+            {
+                "osm_tag": "amenity",
+                "isEditable": "False",
+                "label": "Amenity",
+                "type": "text",
+                "helperText": "Instituitions that provide health care facilities by specialized personnel and equipment."
+            },
+            {
+                "osm_tag": "website",
+                "isEditable": "True",
+                "label": "Website",
+                "type": "text",
+                "helperText": "Website link of the facility if exists."
+            },
+            {
+                "osm_tag": "facebook",
+                "isEditable": "True",
+                "label": "Facebook",
+                "type": "text",
+                "helperText": "Link to the facbook page of the facility if exists."
+            },
+            {
+                "osm_tag": "contact:phone",
+                "isEditable": "True",
+                "label": "Phone",
+                "type": "text",
+                "helperText": "Telephone number of the facility intended for public use. Should be in an international format eg. <country-code>-<area-code>-<local-number>"
+            },
+            {
+                "osm_tag": "healthcare:speciality",
+                "isEditable": "True",
+                "label": "Speciality",
+                "type": "multi-select",
+                "helperText": "List of healthcare specialities provided by the facility.",
+                "selectors": [
+                    {
+                        "osm_value": "maternity",
+                        "label": "Maternity"
+                    },
+                    {
+                        "osm_value":"dermatology",
+                        "label": "Dermatology"
+                    },
+                    {
+                        "osm_value":"plastic_surgery",
+                        "label": "Plastic Surgery"
+                    },
+                    {
+                        "osm_value":"reconstructive_surgery",
+                        "label": "Reconstructive Surgery"
+                    },
+                    {
+                        "osm_value":"internal_medicine",
+                        "label": "Internal Medicine"
+                    },
+                    {
+                        "osm_value":"neurology",
+                        "label": "Neurology"
+                    },
+                    {
+                        "osm_value":"trauma;surgery",
+                        "label": "Trauma and Surgery"
+                    },
+                    {
+                        "osm_value":"ophthalmology",
+                        "label": "Ophthalmology"
+                    },
+                    {
+                        "osm_value":"rehabilitation",
+                        "label": "Rehabilitation"
+                    },
+                    {
+                        "osm_value":"psychiatry",
+                        "label": "Psychiatry"
+                    },
+                    {
+                        "osm_value":"traditional",
+                        "label": "Traditional"
+                    },
+                    {
+                        "osm_value": "urology",
+                        "label": "Urology"
+                    },
+                    {
+                        "osm_value":"oncology",
+                        "label": "Oncology"
+                    },
+                    {
+                        "osm_value":"palliative",
+                        "label": "Palliative"
+                    },
+                    {
+                        "osm_value":"infectious_disease",
+                        "label": "Infectious Disease"
+                    },
+                    {
+                        "osm_value":"pediatric",
+                        "label": "Pediatric"
+                    },
+                    {
+                        "osm_value":"ent",
+                        "label": "ENT"
+                    },
+                    {
+                        "osm_value":"blood_donation_center",
+                        "label": "Blood donation center"
+                    },
+                    {
+                        "osm_value":"laboratory",
+                        "label": "Laboratory"
+                    },
+                    {
+                        "osm_value":"dentist",
+                        "label": "Dentist"
+                    },
+                    {
+                        "osm_value":"intensive_care",
+                        "label": "Intensive Care"
+                    },
+                    {
+                        "osm_value":"obstetrics;gynaecology",
+                        "label": "Obstetrics and Gynaecology"
+                    },
+                    {
+                        "osm_value": "andrology",
+                        "label":"Andrology"
+                    },
+                    {
+                        "osm_value":"veterinary",
+                        "label":"Veterinary"
+                    },
+                    {
+                        "osm_value":"primary_care",
+                        "label": "Primary Care"
+                    },
+                    {
+                        "osm_value":"reproductive_health",
+                        "label": "Reproductive Health"
+                    },
+                    {
+                        "osm_value":"gerontology",
+                        "label": "Gerontology"
+                    },
+                    {
+                        "osm_value":"general",
+                        "label": "General"
+                    },
+                    {
+                        "osm_value":"orthopedic",
+                        "label": "Orthopedic"
+                    }
+                ]
+            }, 
+            {
+                "osm_tag": "healthcare_facility:type",
+                "isEditable": "True",
+                "label": "Category",
+                "type": "single-select",
+                "helperText": "List of categories of healthcare provided by the facility.",
+                "selectors": [
+                    {
+                        "osm_value":"family_clinic",
+                        "label": "Family Clinic"
+                    },
+                    {
+                        "osm_value":"soum_town_family_clinic",
+                        "label": "Soum, Town Family Clinic"
+                    },
+                    {
+                        "osm_value": "maternity_center",
+                        "label": "Maternity Center"
+                    },
+                    {
+                        "osm_value":"public_health_center",
+                        "label": "Public Health Center"
+                    },
+                    {
+                        "osm_value":"clinic",
+                        "label": "Clinic"
+                    },
+                    {
+                        "osm_value":"palliative_care",
+                        "label": "Palliative Care"
+                    },
+                    {
+                        "osm_value":"integrated_hospital",
+                        "label": "Integrated Hospital"
+                    },
+                    {
+                        "osm_value":"health_and_wellness_resort",
+                        "label": "Health And Wellness Resort"
+                    },
+                    {
+                        "osm_value":"emergency_center",
+                        "label": "Emergency Center"
+                    },
+                    {
+                        "osm_value":"rehabilitation_center",
+                        "label":"Rehabilitation Center" 
+                    },
+                    {
+                        "osm_value":"special_hospital",
+                        "label": "Special Hospital"
+                    },
+                    {
+                        "osm_value":"specialist_center",
+                        "label": "Specialist Center"
+                    },
+                    {
+                        "osm_value": "multi-specialist_hospital",
+                        "label": "Multi-Special Hospital"
+                    },
+                    {
+                        "osm_value":"nursing_home",
+                        "label": "Nursing Home"
+                    },
+                    {
+                        "osm_value":"traditional_medicine_integrated_hospital",
+                        "label": "Traditional Medicine Integrated Hospital"
+                    },
+                    {
+                        "osm_value":"unknown",
+                        "label": "Unknown"
+                    }
+                ] 
+            },
+            {
+                "osm_tag": "wheelchair",
+                "isEditable": "True",
+                "label": "Wheelchair",
+                "type": "single-select",
+                "helperText": "Does the healthcare have access to wheelchair facility?",
+                "selectors": [
+                    {
+                        "osm_value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "osm_value":"no",
+                        "label": "No"
+                    },
+                    {
+                        "osm_value":"limited",
+                        "label": "Limited"
+                    },
+                    {
+                        "osm_value":"unknown",
+                        "label": "Unknown"
+                    }
+                ]  
+            },
+            {
+                "osm_tag": "opening_hours",
+                "isEditable": "True",
+                "label": "Opening Hours",
+                "type": "text",
+                "helperText": "Number of hours of operation of the facility. For example Mo-Fr 10:00-17:00."
+            },
+            {
+                "osm_tag": "emergency",
+                "isEditable": "True",
+                "label": "Emergency",
+                "type": "single-select",
+                "helperText": "Does the healthcare have access to emergency service?",
+                "selectors": [
+                    {
+                        "osm_value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "osm_value":"no",
+                        "label": "No"
+                    },
+                    {
+                        "osm_value":"unknown",
+                        "label": "Unknown"
+                    }
+                ]  
+            },
+            {
+                "osm_tag": "Facility:insurance",
+                "isEditable": "True",
+                "label": "Insurance",
+                "type": "single-select",
+                "helperText": "What kind of insurance does the healthcare facility have?",
+                "selectors": [
+                    {
+                        "osm_value": "public",
+                        "label": "Public"
+                    },
+                    {
+                        "osm_value": "private",
+                        "label": "Private"
+                    },
+                    {
+                        "osm_value": "no_insurance",
+                        "label": "No Insurance"
+                    },
+                    {
+                        "osm_value":"unknown",
+                        "label": "Unknown"
+                    }
+                ]  
+            },
+            {
+                "osm_tag": "facility:services",
+                "isEditable": "True",
+                "label": "Services",
+                "type": "multi-select",
+                "helperText": "List of healthcare services provided by the facility.",
+                "selectors": [
+                    {
+                        "osm_value": "covid-19_testing_PCR",
+                        "label": "Covid-19 Testing PCR"
+                    },
+                    {
+                        "osm_value": "covid-19_testing_rapid",
+                        "label": "Covid-19 Testing Rapid"
+                    },
+                    {
+                        "osm_value": "24_hour_ambulance",
+                        "label": "24 Hour Ambulance"
+                    }
+                ]  
+            },
+            {
+                "osm_tag": "hospital:level",
+                "isEditable": "True",
+                "label": "Level",
+                "type": "single-select",
+                "helperText": "Level in which the healthcare facility operates.",
+                "selectors": [
+                    {
+                        "osm_value": "national",
+                        "label": "National"
+                    },
+                    {
+                        "osm_value": "regional",
+                        "label": "Regional"
+                    },
+                    {
+                        "osm_value": "province",
+                        "label": "Province"
+                    },
+                    {
+                        "osm_value": "district",
+                        "label": "District"
+                    },
+                    {
+                        "osm_value": "multi-soum",
+                        "label": "Multi-Soum"
+                    },
+                    {
+                        "osm_value": "soum",
+                        "label": "Soum"
+                    },
+                    {
+                        "osm_value": "family",
+                        "label": "Family"
+                    },
+                    {
+                        "osm_value": "specialist",
+                        "label": "Specialist"
+                    },
+                    {
+                        "osm_value": "private",
+                        "label": "Private"
+                    },
+                    {
+                        "osm_value":"unknown",
+                        "label": "Unknown"
+                    }
+                ]  
+            },
+            {
+                "osm_tag": "operator:type",
+                "isEditable": "True",
+                "label": "Operator Type",
+                "type": "single-select",
+                "helperText": "Is this facility operated by a private or a public entity? Or is it public owned and private operated?",
+                "selectors": [
+                    {
+                        "osm_value": "public",
+                        "label": "Public"
+                    },
+                    {
+                        "osm_value": "private",
+                        "label": "Private"
+                    },
+                    {
+                        "osm_value": "public_owned;private_operated",
+                        "label": "Public Owned, Private Operated"
+                    },
+                    {
+                        "osm_value":"unknown",
+                        "label": "Unknown"
+                    }
+                ]
+            },
+            {
+                "osm_tag": "fixme",
+                "isEditable": "True",
+                "label": "Fix me",
+                "type": "text",
+                "helperText": "To mark object and places that need further attention."
+            }
+        ]
+    }, 
+    {
+        "label": "Pharmacy",
+        "value": "pharmacy",
+        "editTags": [
+            {
+                "osm_tag": "name",
+                "isEditable": "True",
+                "label": "Name",
+                "type": "text",
+                "helperText": "Name of the service"
+            },
+            {
+                "osm_tag": "name:en",
+                "isEditable": "True",
+                "label": "Name in English",
+                "type": "text",
+                "helperText": "Name of the service in English"
+            },
+            {
+                "osm_tag": "name:mn",
+                "isEditable": "True",
+                "label": "Name in Mongolian",
+                "type": "text",
+                "helperText": "Name of the service in Mongolian"
+            },
+            {
+                "osm_tag": "amenity",
+                "isEditable": "False",
+                "label": "Amenity",
+                "type": "text",
+                "helperText": "Instituitions that provide health care facilities by specialized personnel and equipment."
+            },
+            {
+                "osm_tag": "contact:website",
+                "isEditable": "True",
+                "label": "Website",
+                "type": "text",
+                "helperText": "Website link of the facility if exists."
+            },
+            {
+                "osm_tag": "contact:facebook",
+                "isEditable": "True",
+                "label": "Facebook",
+                "type": "text",
+                "helperText": "Link to the facbook page of the facility if exists."
+            },
+            {
+                "osm_tag": "contact:phone",
+                "isEditable": "True",
+                "label": "Phone",
+                "type": "text",
+                "helperText": "Telephone number of the facility intended for public use. Should be in an international format eg. <country-code>-<area-code>-<local-number>"
+            },
+            {
+                "osm_tag": "wheelchair",
+                "isEditable": "True",
+                "label": "Wheelchair",
+                "type": "single-select",
+                "helperText": "Does the healthcare have access to wheelchair facility?",
+                "selectors": [
+                    {
+                        "osm_value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "osm_value":"no",
+                        "label": "No"
+                    },
+                    {
+                        "osm_value":"limited",
+                        "label": "Limited"
+                    },
+                    {
+                        "osm_value":"unknown",
+                        "label": "Unknown"
+                    }
+                ]  
+            },
+            {
+                "osm_tag": "opening_hours",
+                "isEditable": "True",
+                "label": "Opening Hours",
+                "type": "text",
+                "helperText": "Number of hours of operation of the facility. For example Mo-Fr 10:00-17:00."
+            },
+            {
+                "osm_tag": "emergency",
+                "isEditable": "True",
+                "label": "Emergency",
+                "type": "single-select",
+                "helperText": "Does the healthcare have access to emergency service?",
+                "selectors": [
+                    {
+                        "osm_value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "osm_value": "no",
+                        "label": "No"
+                    },
+                    {
+                        "osm_value": "unknown",
+                        "label": "Unknown"
+                    }
+                ]  
+            },
+            {
+                "osm_tag": "fixme",
+                "isEditable": "True",
+                "label": "Fix me",
+                "type": "text",
+                "helperText": "To mark object and places that need further attention."
+            }
+        ]
+    }
+]
