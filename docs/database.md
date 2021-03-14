@@ -6,7 +6,7 @@
 ### Setup
 
 * Navigate to [database config file](/config/dbconfig.json) and update your database credentials.
-* Navigate to [.env file](.env) and update the environment variables.
+* Navigate to the [.env file](.env) and update the environment variables. If the .env file doesn't exist, create one taking this as a reference.
 
 ### Database modelling
 

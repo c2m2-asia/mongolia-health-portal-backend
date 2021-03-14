@@ -31,6 +31,23 @@ Backend repository for C2M2-Mongolia based on Node JS.
 ### Run API server using docker image
 
 * Copy the latest docker image from container registry and paste it in the `docker-compose.yml` file
+* Create a .env file to store environment variables:
+
+```
+####
+# For API and postgres DB
+####
+API_BASE_URL=http://localhost:8080
+POSTGRES_HOST= {db_container_name}
+POSTGRES_DBNAME= {db_name}
+POSTGRES_PORT={db_port}
+POSTGRES_USER= {db_user}
+POSTGRES_PASSWORD={db_password}
+DATABASE_URL= postgres://{db_name}:{db_password}@{db_container_name}:{db_port}/{db_user}
+POSTGRES_MULTIPLE_EXTENSIONS=postgis,postgis_topology
+
+```
+
 * Run the server: `docker-compose up`
 
 ### Open source configuration
