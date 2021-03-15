@@ -31,7 +31,7 @@ Backend repository for C2M2-Mongolia based on Node JS.
 ### Run API server using docker image
 
 * Copy the latest docker image from container registry and paste it in the `docker-compose.yml` file
-* Create a .env file to store environment variables:
+* Create a `.env` file to store environment variables:
 
 ```
 ####
@@ -62,7 +62,7 @@ If you'd like to contribute, clone the repository and push your changes to `data
 ### Links
 
 * [API Documentation](http://178.128.59.143:8080/apidocs/): Existing API doc link for Mongolia health portal.
-* [Issue tracker](): Link to issue board for mongolia health portal backend repository.
+* [Issue tracker](https://github.com/c2m2-asia/mongolia-health-portal-backend/issues): Link to issue board for mongolia health portal backend repository.
 
 ## Partners
 
