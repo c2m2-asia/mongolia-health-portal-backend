@@ -6,7 +6,7 @@
 ### Setup
 
 * Navigate to [database config file](/config/dbconfig.json) and update your database credentials.
-* Navigate to the [.env file](.env) and update the environment variables. If the .env file doesn't exist, create one taking this as a reference.
+* Navigate to the [.env file](.env) and update the environment variables. If the .env file doesn't exist, create one taking [this](https://github.com/c2m2-asia/mongolia-health-portal-backend#run-api-server-using-docker-image) as a reference.
 
 ### Database modelling
 
